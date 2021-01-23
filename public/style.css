@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title-wrapper {
+  background-color: black;
+  color: #ffffff;
+  padding: 30px 0;
+  vertical-align: middle;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+}
+
+table {
+  margin-right: 0;
+  width: 100%;
+}
+
+td,
+th,
+.url {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
