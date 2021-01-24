@@ -7,30 +7,50 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       <div>
-       <div class="title-wrapper">
-        <h1 class="title">Currency Rates API</h1>
-       </div>
-        GET Currency Rates
-        <p class="url">
-          http://localhost:4000/api/rates?base=CAD&currency=USD,SEK
-        </p>
-        <h4>Query Parameters</h4>
-        <table>
-          <tr>
-            <th>Parameters</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td>base</td>
-            <td>home currency rates (i.e. CAD)</td>
-          </tr>
-          <tr>
-            <td>currency</td>
-            <td>specific exchange rates(i.e. USD, SEK).</td>
-          </tr>
-        </table>
+        <div class="title-wrapper">
+          <h1 class="title">Currency Rates API</h1>
+        </div>
+        <div class="container">
+          <h4>GET Currency Rates</h4>
+          <p class="code code-url">
+            <code>
+              http://localhost:4000/api/rates?base=CAD&#38;currency=USD,SEK
+            </code>
+          </p>
+          <h4>Query Parameters</h4>
+          <table>
+            <tr>
+              <th>Parameters</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>base</td>
+              <td>home currency rates (i.e. CAD)</td>
+            </tr>
+            <tr>
+              <td>currency</td>
+              <td>specific exchange rates(i.e. USD, SEK).</td>
+            </tr>
+          </table>
+          <h4>Response</h4>
+          <pre class="code">
+<code>
+  {
+      "results": {
+          "base": "CZK",
+          "date": "2020-11-17",
+          "rates": {
+              "EUR": 0.0377244605,
+              "GBP": 0.033795458,
+              "USD": 0.044824204
+          }
+      }
+  }
+</code>
+  </pre>
+        </div>
       </div>
     </div>
   </body>
