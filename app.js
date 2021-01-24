@@ -27,7 +27,7 @@ app.get("/api/rates", (req, res) => {
       });
     })
     .catch((err) => {
-        res.status(500)
+        res.status(400)
         res.json({
             errror: err.message
         })
